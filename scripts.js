@@ -18,30 +18,25 @@ let tipAmount = 0.00.toFixed(2);
 let totalPerPerson = 0.00.toFixed(2);
 
 bill.addEventListener('keyup', function(event){//Save the bill total after pressing enter to billTotal
-    if(event.keyCode === 13){
         billTotal = parseInt(bill.value);
         tipAmount = (billTotal * percentage) / peopleNum;
         totalPerPerson = (tipAmount + billTotal) / peopleNum;
 
         shownTipAmount.textContent = "$" + tipAmount.toFixed(2);
-        shownTotalAmount.textContent = "$" + totalPerPerson.toFixed(2);
-    }     
+        shownTotalAmount.textContent = "$" + totalPerPerson.toFixed(2);    
 })
 
 numberOfPeople.addEventListener('keyup', function(event){//Saves the number of people after pushing enter to peopleNum
-    if(event.keyCode === 13){
         peopleNum = parseInt(numberOfPeople.value);
 
         tipAmount = ((billTotal * percentage) / peopleNum);
         totalPerPerson = (tipAmount + billTotal) / peopleNum;
 
         shownTipAmount.textContent = "$" + tipAmount.toFixed(2);
-        shownTotalAmount.textContent = "$" + totalPerPerson.toFixed(2);
-    }     
+        shownTotalAmount.textContent = "$" + totalPerPerson.toFixed(2);   
 })
 
 customPercent.addEventListener('keyup', function(event){//Saves the percentage after pushing enter to percentage
-    if(event.keyCode === 13){
         percentage = customPercent.value / 100;
 
         tipAmount = ((billTotal * percentage) / peopleNum);
@@ -49,7 +44,7 @@ customPercent.addEventListener('keyup', function(event){//Saves the percentage a
 
         shownTipAmount.textContent = "$" + tipAmount.toFixed(2);
         shownTotalAmount.textContent = "$" + totalPerPerson.toFixed(2);
-}     
+   
 })
 
 resetButton.addEventListener('click', function(){//Reset button reloads the page
