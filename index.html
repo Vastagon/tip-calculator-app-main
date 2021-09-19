@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <h1>S P L I<br>
+      T T E R</h1>
+  <div class="flexboxContainer">
+    <div class="leftSide">
+      <span>Bill</span>
+      <div class="bill">
+        <input type ="text" id="bill" class="textInput" placeholder="0">
+      </div>
+      <span>Select Tip %</span>
+      <div class="tip">
+        
+            <div class="topLine">
+            <button class="btn" id="fivePercent" type="button">5%</button>
+            <button class="btn" id="tenPercent" type="button">10%</button>
+            <button class="btn" id="fifteenPercent" type="button">15%</button>
+            </div>
+            <div class="bottomLine">
+              <button class="btn" id="twentyFivePercent" type="button">25%</button>
+              <button class="btn" id="fiftyPercent" type="button">50%</button>
+              <input id="custom" type="text" placeholder="Custom" class="custom">
+            </div>
+        
+      </div>
+      <span>Number of People</span>
+      <div class="numberOfPeople">
+        <input id="numberOfPeople" type="text" class="textInput" placeholder="0">
+      </div>
+    </div>
+      <div class="botBackground">
+      <div class="topRightSide">
+        <div class="solidWords">
+          <div class="rightSideTip">
+          <p>Tip Amount<br>
+          <span class="perPerson">/ person</span></p>
+          </div>
+          <div class="rightSideTotal">
+            <p>Total<br>
+            <span class="perPerson">/ person</span></p>
+          </div>
+        </div>
+        <div class="changingNumbers">
+          <h2 id="shownTipAmount" class="money">$0.00</h2>
+          <h2 id="shownTotalAmount" class="money">$0.00</h2>
+        </div>
+        </div>
+        <div class="reset">
+          <button style="background: hsl(186, 14%, 43%); color: var(--Very-dark-cyan);" type="button" id="reset" onclick="window.reload">Reset</button>
+        </div>
+      </div>
+    
+    
+  </div>
+</body>
+</html>
